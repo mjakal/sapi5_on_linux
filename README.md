@@ -1,19 +1,23 @@
 # How to install and use Windows sapi5 voices on Linux
 
 Install the latest version of wine from:
+
 [https://wiki.winehq.org/Ubuntu](https://wiki.winehq.org/Ubuntu)
 
 Download the latest version of winetricks from:
+
 [https://wiki.winehq.org/Winetricks](https://wiki.winehq.org/Winetricks)
 
-After successful download execute these commands:
+After successful download, make sure that winetricks file is present in current directory and execute these commands:
 ```
 chmod +x winetricks
 sudo cp winetricks /usr/local/bin
 ```
 
 Download the latest version of PlayOnLinux from:
+
 [https://www.playonlinux.com/en/download.html](https://www.playonlinux.com/en/download.html)
+
 cd into folder containing playonlinux(version).deb file and execute this command:
 ```
 sudo dpkg -i playonlinux(version).deb
@@ -27,7 +31,9 @@ WINEPREFIX=~/.PlayOnLinux/wineprefix/tts winetricks speechsdk
 ```
 
 To check if everything went well, download the small command line utility from:
+
 [http://www.cross-plus-a.com/bconsole.htm](http://www.cross-plus-a.com/bconsole.htm)
+
 extract it to this folder:
 ```
 /home/(your_user_name)/.PlayOnLinux/wineprefix/tts/drive_c/balcon
@@ -36,7 +42,7 @@ now, run this command from your terminal:
 ```
 WINEPREFIX=~/.PlayOnLinux/wineprefix/tts wine c:/balcon/balcon -l
 ```
-If everything went well, console output should look like this:
+If everything went well, console output should look like this. If there are some unregistered classes, just ignore them :):
 ```
 SAPI 5:
   Microsoft Mary
@@ -44,8 +50,8 @@ SAPI 5:
   Microsoft Sam
   SampleTTSVoice
 ```
-Now you can install your favorite sapi5 voices on your Linux system.
-__Caution__ when installing additional voices, use PlayOnLinux to run setup *.exe/*.msi files. Don't try to install them under default wine prefix.
+Now you can install your favorite sapi5 voices on your Linux machine.
+__Caution__ when installing additional voices, use PlayOnLinux to run setup *.exe/*.msi files. Don't try to install them under default wine prefix, install them under tts wine prefix.
 
 ## Read selected text using sapi5 voices by pressing hot key
 
