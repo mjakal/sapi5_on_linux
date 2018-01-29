@@ -54,13 +54,20 @@ Install xclip on your system by executing the command below
 sudo apt-get install xclip
 ```
 
-Copy/paste scripts folder from the repo into your home folder
-On Ubuntu go to start menu, type in Keyboard and open the app.
-Select Shortcuts tab and on the left hand side chuse Custom shortcuts
-Click on Add custom shortcut button
-Enter a name then under Command, enter the script location with sh prefix
+Copy/paste say.sh, stop.sh scripts from the repo to your /home folder and run these commands:
 ```
-Ex: sh /home/martin/scripts/say.sh
+chmod +x say.sh
+chmod +x stop.sh
 ```
-Repeat steps 4 and 5 for all scripts
+1. On Ubuntu, open start menu, type in Keyboard and open the app.
+2. Select Shortcuts tab and on the left hand side chose Custom shortcuts
+3. Click on Add custom shortcut button
+4. Enter a name then under Command, enter the script location with sh prefix followed by sapi5 voice name
+```
+Ex: sh /home/(your_user_name)/scripts/say.sh 'voice name'
+```
+Repeat steps 3 and 4 for all additional voices. For the stop.sh script, use the same procedure, but the script doesn't require any parameters.
+```
+Ex: sh /home/(your_user_name)/scripts/stop.sh
+```
 When done, click on saved enteries one by one and add Keyboard bindings.
