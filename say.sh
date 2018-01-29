@@ -13,5 +13,5 @@ xclip -out -selection primary | xclip -in -selection clipboard
 cd $location/drive_c/balcon/
 # Convert selected text from utf-8 to utf-16 windows format and save it to file
 xclip -o | iconv --from-code=utf-8 --to-code=utf-16 --output=selected_text.txt
-# Read thex from file
+# Read text from file
 WINEPREFIX=$location wine c:/balcon/balcon -n $voice_name -f c:/balcon/selected_text.txt
