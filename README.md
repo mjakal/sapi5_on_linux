@@ -23,7 +23,7 @@ cd into folder containing playonlinux(version).deb file and execute this command
 sudo dpkg -i playonlinux(version).deb
 ```
 
-After successful installation, run the playonlinux command from your terminal. When the app starts, click on Tools -> Manage Wine versions, select version 2.22 and move it to the right side by clicking on arrow button. Close the form and click on Configure button. When the form loads, click on new button located at the bottom left corner. This will run wineprefix setup wizard. Click next, select 32 bits windows installation and next. Then, select version 2.22 and click next. When prompted for virtual drive name, enter tts and wait for the wizard to finish. You are done with wineprefix configuration.
+After successful installation, run the playonlinux command from your terminal. When the app starts, click on Tools -> Manage Wine versions, select version 5.5 (x86) and move it to the right side by clicking on arrow button. Close the form and click on Configure button. When the form loads, click on new button located at the bottom left corner. This will run wineprefix setup wizard. Click next, select 32 bit windows installation and click next. Then, select version 5.5 and click next. When prompted for virtual drive name, enter tts and wait for the wizard to finish. You are done with wineprefix configuration.
 
 Now, run the command below to install sapi5 engine:
 ```
@@ -76,4 +76,4 @@ Repeat steps 3 and 4 for all additional voices. For the stop.sh script, use the 
 ```
 Ex: sh /home/(your_user_name)/scripts/stop.sh
 ```
-When done, click on saved enteries one by one and add Keyboard bindings.
+When done, click on saved entries one by one and add Keyboard bindings.
